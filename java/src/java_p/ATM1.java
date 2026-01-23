@@ -33,7 +33,7 @@ import java.util.Scanner;
  
 
 class bankAccount extends atm{
-	//bankAccount(String c,int d){
+	
 	String c;
 	int d;
 	void bankbalance(String c,int d) {
@@ -48,8 +48,7 @@ class bankAccount extends atm{
 			else if(c.equals("balance")) {
 			  super.checkBalance();
 			
-		//System.out.println("check blance");
-		//System.out.print("Press Yes");
+		
 			}
 	}
 	
@@ -65,25 +64,16 @@ class bankAccount extends atm{
 		System.out.println("Please insert your card");
 		System.out.print("Enter withdraw/deposit/balance : ");
 		String a = obj.nextLine();
-		//if(a.equals("withdraw") || a.equals("deposit")) {
 		System.out.print("Enter Amount : ");
 	
 		int b = obj.nextInt();
-		//}
-		//bankAccount obj2 = new bankAccount();
+		
+		
 		obj2.bankbalance(a,b);
 		
 		System.out.println("please Take your card");
-		//bankAccount obj2 = new bankAccount();
-		/*if(a=="withdraw") {
-          obj2.withdraw(b);
-		}
-		else if(a=="deposit") {
-          obj2.deposit(b);
-		}
-		else if(a=="balance") {
-			obj2.checkBalance();
-		}*/
+		
+		
 	}
 
 }
